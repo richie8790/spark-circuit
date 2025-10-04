@@ -1,0 +1,19 @@
+[project]
+name = 'spark-circuit'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.spark-circuit]
+path = 'contracts/spark-circuit.clar'
+clarity_version = 3
+epoch = 3.0
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
